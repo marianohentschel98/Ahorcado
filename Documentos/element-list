@@ -1,0 +1,5 @@
+module:com.example.ahorcado
+com.example.ahorcado
+com.example.ahorcado.controller
+com.example.ahorcado.modelo
+com.example.ahorcado.utils

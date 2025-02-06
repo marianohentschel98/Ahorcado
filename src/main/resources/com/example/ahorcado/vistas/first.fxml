@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.ahorcado.controller.FirstController" spacing="10" alignment="CENTER" stylesheets="@first.css">
+
+    <!-- Mensaje de bienvenida -->
+    <Label fx:id="lblBienvenido" style="-fx-font-size: 16px;" text="Bienvenido, jugador!" />
+
+    <!-- Intentos restantes -->
+    <Label fx:id="lblIntentos" text="Intentos restantes: 6" />
+
+    <!-- Imagen del ahorcado -->
+    <ImageView fx:id="imgAhorcado" fitWidth="150" fitHeight="150" />
+
+    <!-- Estado de la palabra debajo de la imagen -->
+    <Label fx:id="lblEstado" text="Palabra: _ _ _ _" />
+
+    <!-- Campo de texto y botón Intentar -->
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="txtLetra" promptText="Introduce una letra" maxWidth="50" />
+        <Button fx:id="btnIntentar" text="Intentar" onAction="#handleIntentar" />
+    </HBox>
+
+    <!-- Resultado y botón de reinicio -->
+    <Button fx:id="btnLetrasUtilizadas" text="Letras Utilizadas" onAction="#handleLetrasUtilizadas" />
+    <Label fx:id="lblResultado" text="" />
+    <Button fx:id="btnReiniciar" text="Reiniciar Juego" onAction="#handleReiniciar" />
+</VBox>

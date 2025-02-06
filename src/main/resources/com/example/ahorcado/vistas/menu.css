@@ -1,0 +1,60 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #43cea2, #185a9d);
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-font-family: "Arial, sans-serif";
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.label:first-of-type {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffde59;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 5, 0.5, 0, 2);
+}
+
+.label:nth-of-type(2) {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: gray;
+    -fx-font-size: 16px;
+    -fx-border-color: #43cea2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5;
+}
+
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #ff6b6b, #ff4757);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 8 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.5, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff4757, #ff6b6b);
+    -fx-cursor: hand;
+}
+
+.button:last-of-type {
+    -fx-background-color: linear-gradient(to bottom, #6a11cb, #2575fc);
+}
+
+.button:last-of-type:hover {
+    -fx-background-color: linear-gradient(to bottom, #2575fc, #6a11cb);
+}

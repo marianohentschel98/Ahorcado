@@ -1,0 +1,77 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #4facfe, #00f2fe);
+    -fx-padding: 20;
+    -fx-alignment: center;
+    -fx-font-family: "Arial, sans-serif";
+}
+
+/* Label Styles */
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+
+#lblBienvenido {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffde59;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 5, 0.5, 0, 2);
+}
+
+
+#lblIntentos {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff6b6b;
+}
+
+
+#lblEstado {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-padding: 5;
+    -fx-border-radius: 5;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: gray;
+    -fx-font-size: 18px;
+    -fx-border-color: #4facfe;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #ff6b6b, #ff4757);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 8 20;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff4757, #ff6b6b);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.5, 0, 2);
+}
+
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0.5, 0, 2);
+}
+
+#lblResultado {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0.5, 0, 2);
+}
