@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseManager implements DatabaseOperations {
-    private static final String URL = "jdbc:sqlite:D:/Mariano/DINTBBDD/ahorcado.db";
+    private static final String URL = "jdbc:sqlite:src/main/java/data/ahorcado.db";
 
     public DatabaseManager() {
         conectar();
