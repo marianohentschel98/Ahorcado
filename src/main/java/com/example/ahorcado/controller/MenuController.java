@@ -2,7 +2,11 @@ package com.example.ahorcado.controller;
 
 import com.example.ahorcado.utils.Constantes;
 import com.example.ahorcado.utils.PantallaUtils;
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.element.Paragraph;
 import data.DatabaseManager;
+import data.ReportGenerator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +15,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import javax.swing.text.Document;
+import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Controlador para la pantalla del menú principal del juego del ahorcado.
@@ -65,6 +72,16 @@ public class MenuController {
         dbManager.insertarPalabra(nuevaPalabra);
         mostrarAlerta("Éxito", "Palabra añadida correctamente: " + nuevaPalabra);
         txtNuevaPalabra.clear();
+    }
+    @FXML
+    private void handleGenerarPDF() {
+        try {
+            ReportGenerator.generarInforme("reporte.pdf");  // Llamar al método de la clase GeneradorPDF
+            mostrarAlerta("PDF generado", "El informe se ha guardado como reporte.pdf");
+        } catch (Exception e) {
+            e.printStackTrace();
+            mostrarAlerta("Error", "No se pudo generar el PDF.");
+        }
     }
 
     @FXML

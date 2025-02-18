@@ -28,5 +28,9 @@
         <Button text="Añadir" onAction="#handleAgregarPalabra" />
         <Button text="Eliminar" onAction="#handleEliminarPalabra" />
     </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Generar Informe" onAction="#handleGenerarPDF"/>
+
+    </HBox>
 
 </VBox>

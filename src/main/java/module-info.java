@@ -4,6 +4,9 @@ module com.example.ahorcado {
     requires java.sql;
     requires junit;
     requires org.junit.jupiter.api;
+    requires java.desktop;
+    requires kernel;
+    requires layout;
 
 
     opens com.example.ahorcado to javafx.fxml;
